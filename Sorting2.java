@@ -48,10 +48,10 @@ public class Sorting2 {
     int i=lt+1;
     int j=rt;
     while(i<=j){
-    while(a[i]<=pivot && i<=rt){
+    while(i<=rt && a[i]<=pivot){
       i++;
     }
-    while(a[j]>=pivot && j>lt){
+    while(j>lt && a[j]>pivot){
       j--;
     }
     if(i<j){
